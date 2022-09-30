@@ -2,8 +2,10 @@ package br.com.estudos
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
+import io.reactivex.Maybe
 import io.reactivex.Observable
 import io.reactivex.Observer
+import io.reactivex.Single
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
@@ -69,6 +71,7 @@ class RepositoryImpl : Repository {
             }
         )
 
+        val g = getWithRx2()?.subscribe()
         getWithRx()
     }
 
@@ -95,6 +98,34 @@ class RepositoryImpl : Repository {
                 }
 
             })
+
+    }
+
+    private fun getWithRx2(): Maybe<ResponseDados>? {
+
+        return Provider().providerApi().getDados2()
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+            .singleElement()
+//            .subscribe(object : Observer<ResponseDados> {
+//                override fun onSubscribe(d: Disposable) {
+//                    Log.d("###", "onSubscribe")
+//                }
+//
+//                override fun onNext(t: ResponseDados) {
+//                    Log.d("###", "RxJava ${t?.mData?.totalCases}")
+//                }
+//
+//                override fun onError(e: Throwable) {
+//                    Log.d("###", "onError")
+//                }
+//
+//                override fun onComplete() {
+//                    Log.d("###", "onComplete")
+//                }
+//
+//            })
+
 
     }
 
