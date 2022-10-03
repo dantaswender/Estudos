@@ -87,20 +87,20 @@ class MainActivity : AppCompatActivity() {
                 if (day.owner == DayOwner.THIS_MONTH) {
                     when {
                         selectedDates.contains(day.date) -> {
-                            //textView.setTextColorRes(R.color.example_1_bg)
+                            textView.setTextColorRes(R.color.example_2_black)
                             textView.setBackgroundResource(R.drawable.example_1_selected_bg)
                         }
                         today == day.date -> {
-                            //textView.setTextColorRes(R.color.example_1_white)
-                            textView.setBackgroundResource(R.drawable.example_1_today_bg)
+                            textView.setTextColorRes(R.color.example_1_white)
+                            textView.setBackgroundResource(R.drawable.example_3_today_bg)
                         }
                         else -> {
-                            //textView.setTextColorRes(R.color.example_1_white)
+                            textView.setTextColorRes(R.color.example_2_black)
                             textView.background = null
                         }
                     }
                 } else {
-                    //textView.setTextColorRes(R.color.example_1_white_light)
+                    textView.setTextColorRes(R.color.brown_700)
                     textView.background = null
                 }
             }
