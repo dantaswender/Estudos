@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/exOneDayText"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="5dp"
     android:gravity="center"
-    android:textSize="16sp"
-    tools:text="22" />
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/exOneDayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/dayTax"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="22"
+        tools:background="@drawable/example_4_single_selected_bg"/>
+
+    <View
+        android:id="@+id/dayTax"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:background="@drawable/example_4_single_selected_bg"
+        android:backgroundTint="@color/blue_800"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exOneDayText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
 

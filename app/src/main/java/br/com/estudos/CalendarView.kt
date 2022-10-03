@@ -684,12 +684,18 @@ open class CalendarView : RecyclerView {
      * @param endMonth The last month on the calendar.
      * @param firstDayOfWeek An instance of [DayOfWeek] enum to be the first day of week.
      */
-    fun setup(startMonth: YearMonth, endMonth: YearMonth, firstDayOfWeek: DayOfWeek) {
+    fun setup(
+        startMonth: YearMonth,
+        endMonth: YearMonth,
+        firstDayOfWeek: DayOfWeek,
+        currentMonth: YearMonth
+    ) {
         configJob?.cancel()
         this.startMonth = startMonth
         this.endMonth = endMonth
         this.firstDayOfWeek = firstDayOfWeek
         finishSetup(generateMonthConfig(Job()))
+        scrollToMonth(currentMonth)
     }
 
     /**
