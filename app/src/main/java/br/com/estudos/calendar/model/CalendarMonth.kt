@@ -1,4 +1,4 @@
-package br.com.estudos.model
+package br.com.estudos.calendar.model
 
 import java.io.Serializable
 import java.time.YearMonth

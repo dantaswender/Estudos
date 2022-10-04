@@ -1,10 +1,10 @@
-package br.com.estudos.ui
+package br.com.estudos.calendar.ui
 
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import br.com.estudos.model.CalendarDay
-import br.com.estudos.model.CalendarMonth
+import br.com.estudos.calendar.model.CalendarDay
+import br.com.estudos.calendar.model.CalendarMonth
 
 internal class MonthViewHolder constructor(
     adapter: CalendarAdapter,

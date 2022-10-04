@@ -13,12 +13,12 @@ import androidx.core.view.children
 import androidx.core.view.updateLayoutParams
 import br.com.estudos.databinding.CalendarLayoutBinding
 import br.com.estudos.databinding.Example1CalendarDayBinding
-import br.com.estudos.model.CalendarDay
-import br.com.estudos.model.DayOwner
-import br.com.estudos.model.DayOwner.*
-import br.com.estudos.model.InDateStyle
-import br.com.estudos.ui.DayBinder
-import br.com.estudos.ui.ViewContainer
+import br.com.estudos.calendar.model.CalendarDay
+import br.com.estudos.calendar.model.DayOwner
+import br.com.estudos.calendar.model.DayOwner.*
+import br.com.estudos.calendar.model.InDateStyle
+import br.com.estudos.calendar.ui.DayBinder
+import br.com.estudos.calendar.ui.ViewContainer
 import br.com.estudos.utils.CalendarUtil.getLocale
 import br.com.estudos.utils.next
 import br.com.estudos.utils.previous
@@ -219,7 +219,7 @@ class MainActivity : AppCompatActivity() {
             val dayTax = container.dayTax
             textView.text = day.date.dayOfMonth.toString()
 //            if (hasTaxToPay) {
-//                dayTax.visibility = VISIBLE
+                dayTax.visibility = VISIBLE
 //            }
             if (day.owner == THIS_MONTH) {
                 when {
@@ -238,7 +238,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             } else {
-                textView.setTextColorRes(R.color.brown_700)
+                textView.setTextColorRes(R.color.red_800)
                 textView.background = null
             }
         }

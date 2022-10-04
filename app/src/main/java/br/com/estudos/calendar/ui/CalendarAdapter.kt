@@ -1,4 +1,4 @@
-package br.com.estudos.ui
+package br.com.estudos.calendar.ui
 
 import android.animation.ValueAnimator
 import android.content.Context
@@ -11,9 +11,10 @@ import androidx.annotation.LayoutRes
 import androidx.core.view.ViewCompat
 import androidx.core.view.updateLayoutParams
 import androidx.recyclerview.widget.RecyclerView
-import br.com.estudos.CalendarView
-import br.com.estudos.model.*
-import br.com.estudos.model.MonthConfig
+import br.com.estudos.calendar.CalendarView
+import br.com.estudos.calendar.model.*
+import br.com.estudos.calendar.model.MonthConfig
+import br.com.estudos.utils.*
 import br.com.estudos.utils.NO_INDEX
 import br.com.estudos.utils.getVerticalMargins
 import br.com.estudos.utils.inflate

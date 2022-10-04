@@ -1,4 +1,4 @@
-package br.com.estudos.ui
+package br.com.estudos.calendar.ui
 
 import android.view.View
 import android.widget.LinearLayout
@@ -6,7 +6,7 @@ import androidx.annotation.LayoutRes
 import androidx.core.view.*
 import androidx.core.view.MarginLayoutParamsCompat.getMarginEnd
 import androidx.core.view.MarginLayoutParamsCompat.getMarginStart
-import br.com.estudos.model.CalendarDay
+import br.com.estudos.calendar.model.CalendarDay
 import br.com.estudos.utils.Size
 import br.com.estudos.utils.inflate
 

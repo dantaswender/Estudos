@@ -1,4 +1,4 @@
-package br.com.estudos.model
+package br.com.estudos.calendar.model
 
 /**
  * Describes the month to which a [CalendarDay] belongs.

@@ -1,10 +1,10 @@
-package br.com.estudos.ui
+package br.com.estudos.calendar.ui
 
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import androidx.core.view.isGone
-import br.com.estudos.model.CalendarDay
+import br.com.estudos.calendar.model.CalendarDay
 
 internal class WeekHolder(private val dayHolders: List<DayHolder>) {
 

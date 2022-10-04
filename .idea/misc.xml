@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Temp/Estudos/app/src/main/res/drawable/example_3_today_bg.xml" value="0.2235" />
+        <entry key="..\:/Temp/Estudos/app/src/main/res/drawable/example_4_today_bg.xml" value="0.1075" />
+        <entry key="..\:/Temp/Estudos/app/src/main/res/drawable/example_5_selected_bg.xml" value="0.198" />
+        <entry key="..\:/Temp/Estudos/app/src/main/res/layout/activity_main.xml" value="0.3546875" />
+        <entry key="..\:/Temp/Estudos/app/src/main/res/layout/activity_main2.xml" value="0.3546875" />
+        <entry key="..\:/Temp/Estudos/app/src/main/res/layout/calendar_layout.xml" value="0.3546875" />
+        <entry key="..\:/Temp/Estudos/app/src/main/res/layout/calendar_layout2.xml" value="0.3546875" />
+        <entry key="..\:/Temp/Estudos/app/src/main/res/layout/example_1_calendar_day.xml" value="0.3546875" />
         <entry key="..\:/Works/MyCompany/android/dev/Estudos/app/src/main/res/drawable-v24/example_1_selected_bg.xml" value="0.1" />
         <entry key="..\:/Works/MyCompany/android/dev/Estudos/app/src/main/res/drawable-v24/example_1_today_bg.xml" value="0.1" />
         <entry key="..\:/Works/MyCompany/android/dev/Estudos/app/src/main/res/drawable/example_1_selected_bg.xml" value="0.1" />

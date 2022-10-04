@@ -1,4 +1,4 @@
-package br.com.estudos.model
+package br.com.estudos.calendar.model
 
 import br.com.estudos.utils.next
 import br.com.estudos.utils.previous

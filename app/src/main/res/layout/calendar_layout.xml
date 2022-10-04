@@ -83,7 +83,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp" />
 
-            <br.com.estudos.CalendarView
+            <br.com.estudos.calendar.CalendarView
                 android:id="@+id/exOneCalendar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

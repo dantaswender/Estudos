@@ -1,4 +1,4 @@
-package br.com.estudos.ui
+package br.com.estudos.calendar.ui
 
 import android.view.View
 import androidx.recyclerview.widget.OrientationHelper

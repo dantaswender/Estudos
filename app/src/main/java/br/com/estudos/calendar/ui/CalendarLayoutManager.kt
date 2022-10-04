@@ -1,4 +1,4 @@
-package br.com.estudos.ui
+package br.com.estudos.calendar.ui
 
 import android.content.Context
 import android.graphics.Rect
@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSmoothScroller
 import androidx.recyclerview.widget.RecyclerView
-import br.com.estudos.CalendarView
-import br.com.estudos.model.CalendarDay
-import br.com.estudos.model.ScrollMode
+import br.com.estudos.calendar.CalendarView
+import br.com.estudos.calendar.model.CalendarDay
+import br.com.estudos.calendar.model.ScrollMode
 import br.com.estudos.utils.NO_INDEX
 import java.time.YearMonth
 

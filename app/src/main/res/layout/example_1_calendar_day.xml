@@ -2,24 +2,22 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical">
+    android:id="@+id/dayOfCalendar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:background="@drawable/example_5_selected_bg">
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/exOneDayText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"
-        android:padding="5dp"
         app:layout_constraintBottom_toTopOf="@+id/dayTax"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed"
-        tools:text="22"
-        tools:background="@drawable/example_4_single_selected_bg"/>
+        tools:text="22"/>
 
     <View
         android:id="@+id/dayTax"
@@ -27,7 +25,6 @@
         android:layout_height="7dp"
         android:background="@drawable/example_4_single_selected_bg"
         android:backgroundTint="@color/blue_800"
-        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

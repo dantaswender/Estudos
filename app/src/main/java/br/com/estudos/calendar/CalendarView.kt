@@ -1,4 +1,4 @@
-package br.com.estudos
+package br.com.estudos.calendar
 
 import android.content.Context
 import android.util.AttributeSet
@@ -8,11 +8,12 @@ import androidx.annotation.Px
 import androidx.core.content.withStyledAttributes
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import br.com.estudos.model.*
-import br.com.estudos.model.MonthConfig
-import br.com.estudos.ui.*
-import br.com.estudos.ui.CalendarLayoutManager
-import br.com.estudos.ui.CalenderPageSnapHelper
+import br.com.estudos.R
+import br.com.estudos.calendar.model.*
+import br.com.estudos.calendar.model.MonthConfig
+import br.com.estudos.calendar.ui.*
+import br.com.estudos.calendar.ui.CalendarLayoutManager
+import br.com.estudos.calendar.ui.CalenderPageSnapHelper
 import br.com.estudos.utils.Size
 import br.com.estudos.utils.job
 import kotlinx.coroutines.*
