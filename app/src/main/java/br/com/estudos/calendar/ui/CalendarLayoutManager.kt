@@ -11,7 +11,8 @@ import br.com.estudos.calendar.CalendarView
 import br.com.estudos.calendar.model.CalendarDay
 import br.com.estudos.calendar.model.ScrollMode
 import br.com.estudos.utils.NO_INDEX
-import java.time.YearMonth
+//import java.time.YearMonth
+import org.joda.time.*
 
 internal class CalendarLayoutManager(private val calView: CalendarView, @RecyclerView.Orientation orientation: Int) :
     LinearLayoutManager(calView.context, orientation, false) {

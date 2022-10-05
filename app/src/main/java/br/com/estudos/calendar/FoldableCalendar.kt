@@ -29,10 +29,12 @@ import br.com.estudos.utils.CalendarUtil
 import br.com.estudos.utils.next
 import br.com.estudos.utils.previous
 import br.com.estudos.utils.yearMonth
+import org.joda.time.*
+import java.text.SimpleDateFormat
 import java.time.DayOfWeek
-import java.time.LocalDate
-import java.time.YearMonth
-import java.time.format.DateTimeFormatter
+//import java.time.DayOfWeek
+//import java.time.LocalDate
+//import java.time.YearMonth
 import java.time.format.TextStyle
 
 
@@ -42,11 +44,11 @@ fun Context.getLayoutInflater() =
 class FoldableCalendar(context: Context, attrs: AttributeSet) : LinearLayout(context, attrs) {
 
     private var binding: CalendarLayoutBinding
-    private val minusMonth = 10L
-    private val plusMonth = 10L
+    private val minusMonth = 10
+    private val plusMonth = 10
     private val selectedDay = mutableListOf<LocalDate>()
     private val today = LocalDate.now()
-    private val monthTitleFormatter = DateTimeFormatter.ofPattern("MMMM")
+    //private val monthTitleFormatter = DateTimeFormatter.ofPattern("MMMM")
     private var monthToWeek = false
 
     init {
@@ -57,6 +59,11 @@ class FoldableCalendar(context: Context, attrs: AttributeSet) : LinearLayout(con
             styledAttributes.recycle()
         }
 
+    }
+
+    private fun monthYearFromDate(date: LocalDate?): String {
+        val formatter = SimpleDateFormat("MMMM")
+        return formatter.format(date!!.toDate())
     }
 
     fun setupCalendar(backGroundColor: Int? = null, callBack: CalendaCallBack) {
@@ -137,8 +144,8 @@ class FoldableCalendar(context: Context, attrs: AttributeSet) : LinearLayout(con
 
     private fun monthScrollListener(calendarMonth: CalendarMonth) {
         return if (binding.exOneCalendar.maxRowCount == 6) {
-            binding.exOneYearText.text = calendarMonth.yearMonth.year.toString()
-            binding.exOneMonthText.text = monthTitleFormatter.format(calendarMonth.yearMonth)
+            binding.exOneYearText.text = "2022"//calendarMonth.yearMonth.year.toString()
+            binding.exOneMonthText.text = "Outubro"//monthTitleFormatter.format(calendarMonth.yearMonth)
         } else {
             // In week mode, we show the header a bit differently.
             // We show indices with dates from different months since
@@ -147,11 +154,11 @@ class FoldableCalendar(context: Context, attrs: AttributeSet) : LinearLayout(con
             val firstDate = calendarMonth.weekDays.first().first().date
             val lastDate = calendarMonth.weekDays.last().last().date
             if (firstDate.yearMonth == lastDate.yearMonth) {
-                binding.exOneYearText.text = firstDate.yearMonth.year.toString()
-                binding.exOneMonthText.text = monthTitleFormatter.format(firstDate)
+                binding.exOneYearText.text = "2022"//firstDate.yearMonth.year.toString()
+                binding.exOneMonthText.text = "Outubro"// monthTitleFormatter.format(firstDate)
             } else {
-                binding.exOneMonthText.text =
-                    "${monthTitleFormatter.format(firstDate)} - ${firstDate.yearMonth.year}"
+                binding.exOneMonthText.text = "Outubro - 2022"
+                    //"${monthTitleFormatter.format(firstDate)} - ${firstDate.yearMonth.year}"
                 binding.exOneYearText.text = ""
 
             }

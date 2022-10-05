@@ -4,7 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import br.com.estudos.calendar.CalendaCallBack
 import br.com.estudos.databinding.ActivityMain2Binding
-import java.time.LocalDate
+//import java.time.LocalDate
+import org.joda.time.*
 
 class MainActivity2 : AppCompatActivity() {
     private lateinit var binding: ActivityMain2Binding

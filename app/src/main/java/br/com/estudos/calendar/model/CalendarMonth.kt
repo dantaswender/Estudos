@@ -1,7 +1,8 @@
 package br.com.estudos.calendar.model
 
 import java.io.Serializable
-import java.time.YearMonth
+//import java.time.YearMonth
+import org.joda.time.*
 
 data class CalendarMonth(
     val yearMonth: YearMonth,
@@ -11,7 +12,7 @@ data class CalendarMonth(
 ) : Comparable<CalendarMonth>, Serializable {
 
     val year: Int = yearMonth.year
-    val month: Int = yearMonth.monthValue
+    val month: Int = yearMonth.monthOfYear
 
     override fun hashCode(): Int {
         return 31 * yearMonth.hashCode() +

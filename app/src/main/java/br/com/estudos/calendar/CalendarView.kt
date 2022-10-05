@@ -19,8 +19,9 @@ import br.com.estudos.utils.job
 import kotlinx.coroutines.*
 import kotlinx.coroutines.Dispatchers.Main
 import java.time.DayOfWeek
-import java.time.LocalDate
-import java.time.YearMonth
+//import java.time.LocalDate
+//import java.time.YearMonth
+import org.joda.time.*
 
 typealias Completion = () -> Unit
 typealias Cancellation = () -> Unit

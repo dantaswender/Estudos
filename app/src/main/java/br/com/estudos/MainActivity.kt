@@ -24,11 +24,11 @@ import br.com.estudos.utils.next
 import br.com.estudos.utils.previous
 import br.com.estudos.utils.yearMonth
 import java.time.DayOfWeek
-import java.time.LocalDate
-import java.time.YearMonth
+//import java.time.LocalDate
+//import java.time.YearMonth
 import java.time.format.DateTimeFormatter
 import java.time.format.TextStyle
-import java.util.*
+import org.joda.time.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
         binding.exOneCalendar.monthScrollListener = {
             if (binding.exOneCalendar.maxRowCount == 6) {
                 binding.exOneYearText.text = it.yearMonth.year.toString()
-                binding.exOneMonthText.text = monthTitleFormatter.format(it.yearMonth)
+                binding.exOneMonthText.text = "Outubro"//monthTitleFormatter.format(it.yearMonth)
             } else {
                 // In week mode, we show the header a bit differently.
                 // We show indices with dates from different months since
@@ -75,10 +75,10 @@ class MainActivity : AppCompatActivity() {
                 val lastDate = it.weekDays.last().last().date
                 if (firstDate.yearMonth == lastDate.yearMonth) {
                     binding.exOneYearText.text = firstDate.yearMonth.year.toString()
-                    binding.exOneMonthText.text = monthTitleFormatter.format(firstDate)
+                    binding.exOneMonthText.text = "Outubro" //monthTitleFormatter.format(firstDate)
                 } else {
-                    binding.exOneMonthText.text =
-                        "${monthTitleFormatter.format(firstDate)} - ${firstDate.yearMonth.year.toString()}"
+                    binding.exOneMonthText.text = "Outubro"
+                        //"${monthTitleFormatter.format(firstDate)} - ${firstDate.yearMonth.year.toString()}"
 //                        "${monthTitleFormatter.format(firstDate)} - ${
 //                            monthTitleFormatter.format(
 //                                lastDate
