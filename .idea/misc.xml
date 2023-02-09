@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Works/MyCompany/android/dev/Estudos/app/src/main/res/drawable/example_1_selected_bg.xml" value="0.1" />
+        <entry key="..\:/Works/MyCompany/android/dev/Estudos/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Works/MyCompany/android/dev/Estudos/app/src/main/res/layout/calendar_day_legend.xml" value="0.17604166666666668" />
+        <entry key="..\:/Works/MyCompany/android/dev/Estudos/app/src/main/res/layout/calendar_layout.xml" value="0.3546875" />
+        <entry key="..\:/Works/MyCompany/android/dev/Estudos/app/src/main/res/layout/example_1_calendar_day.xml" value="0.2638888888888889" />
+        <entry key="..\:/Works/MyCompany/android/dev/Estudos/app/src/main/res/layout/fragment_item_list_dialog_list_dialog.xml" value="0.3546875" />
+        <entry key="..\:/Works/MyCompany/android/dev/Estudos/app/src/main/res/layout/fragment_item_list_dialog_list_dialog_item.xml" value="0.3546875" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
