@@ -1,6 +1,7 @@
 package br.com.estudos
 
 import android.animation.ValueAnimator
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -90,6 +91,7 @@ class MainActivity : AppCompatActivity() {
                         today == day.date -> {
                             textView.setTextColorRes(R.color.example_1_white)
                             textView.setBackgroundResource(R.drawable.example_1_today_bg)
+                            textView.background.setTint(Color.parseColor("#ffffff"))
                         }
                         else -> {
                             textView.setTextColorRes(R.color.example_1_white)
